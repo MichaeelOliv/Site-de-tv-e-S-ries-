@@ -1,0 +1,84 @@
+/* style.css */
+:root {
+    --bg-color: #121212;
+        --card-bg: #1e1e1e;
+            --text-main: #ffffff;
+                --text-muted: #b3b3b3;
+                    --accent: #e50914; /* Tom avermelhado clássico de streaming */
+                    }
+
+                    * {
+                        margin: 0;
+                            padding: 0;
+                                box-sizing: border-box;
+                                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                    }
+
+                                    body {
+                                        background-color: var(--bg-color);
+                                            color: var(--text-main);
+                                                display: flex;
+                                                    flex-direction: column;
+                                                        align-items: center;
+                                                            padding: 3rem 2rem;
+                                                                min-height: 100vh;
+                                                                }
+
+                                                                header {
+                                                                    text-align: center;
+                                                                        margin-bottom: 4rem;
+                                                                        }
+
+                                                                        header h1 {
+                                                                            font-size: 2.8rem;
+                                                                                margin-bottom: 0.5rem;
+                                                                                    letter-spacing: 1px;
+                                                                                    }
+
+                                                                                    header p {
+                                                                                        color: var(--text-muted);
+                                                                                            font-size: 1.1rem;
+                                                                                            }
+
+                                                                                            /* Sistema de Grid Responsivo */
+                                                                                            .grid-container {
+                                                                                                display: grid;
+                                                                                                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                                                                                                        gap: 1.5rem;
+                                                                                                            width: 100%;
+                                                                                                                max-width: 1000px;
+                                                                                                                }
+
+                                                                                                                /* Estilo dos Cartões (Links) */
+                                                                                                                .card {
+                                                                                                                    background-color: var(--card-bg);
+                                                                                                                        border-radius: 12px;
+                                                                                                                            padding: 2.5rem 1.5rem;
+                                                                                                                                text-decoration: none;
+                                                                                                                                    color: var(--text-main);
+                                                                                                                                        display: flex;
+                                                                                                                                            flex-direction: column;
+                                                                                                                                                align-items: center;
+                                                                                                                                                    justify-content: center;
+                                                                                                                                                        text-align: center;
+                                                                                                                                                            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+                                                                                                                                                                border: 2px solid transparent;
+                                                                                                                                                                }
+
+                                                                                                                                                                /* Efeito ao passar o mouse */
+                                                                                                                                                                .card:hover {
+                                                                                                                                                                    transform: translateY(-5px);
+                                                                                                                                                                        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+                                                                                                                                                                            border-color: var(--accent);
+                                                                                                                                                                            }
+
+                                                                                                                                                                            .card h2 {
+                                                                                                                                                                                font-size: 1.5rem;
+                                                                                                                                                                                    margin-bottom: 0.8rem;
+                                                                                                                                                                                    }
+
+                                                                                                                                                                                    .card p {
+                                                                                                                                                                                        font-size: 0.95rem;
+                                                                                                                                                                                            color: var(--text-muted);
+                                                                                                                                                                                            }
+                                                                                                                                                                                            
